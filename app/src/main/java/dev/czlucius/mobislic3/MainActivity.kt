@@ -10,12 +10,20 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import dev.czlucius.mobislic3.databinding.ActivityMainBinding
+import org.the3deer.util.android.AndroidURLStreamHandlerFactory
+import java.net.URL
 
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+
+    init {
+        System.setProperty("java.protocol.handler.pkgs", "org.the3deer.dddmodel2"); URL.setURLStreamHandlerFactory(
+            AndroidURLStreamHandlerFactory()
+        );
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +37,6 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
 
     }
-
 
 
     override fun onSupportNavigateUp(): Boolean {
