@@ -1,0 +1,3 @@
+[submodule "android-3D-engine"]
+	path = android-3D-engine
+	url = https://github.com/the3deer/android-3D-engine.git

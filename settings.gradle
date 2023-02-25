@@ -13,4 +13,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "MobiSlic3"
+include ':android-3D-engine'
+
 include ':app'
