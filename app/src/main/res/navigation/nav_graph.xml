@@ -25,4 +25,10 @@
             app:destination="@id/slic3rFragment" />
     </fragment>
 
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="dev.czlucius.mobislic3.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+
 </navigation>

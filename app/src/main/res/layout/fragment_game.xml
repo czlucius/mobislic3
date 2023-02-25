@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/protag"
+        android:layout_width="123dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/firing"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/enemy1"
+        android:layout_width="123dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="580dp"
+        android:layout_marginTop="24dp"
+        android:alpha="0.5"
+        android:src="@drawable/enemy1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/enemy2"
+        android:layout_width="123dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="580dp"
+        android:layout_marginTop="152dp"
+        android:alpha="0"
+        android:src="@drawable/enemy1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/enemy3"
+        android:layout_width="123dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="580dp"
+        android:layout_marginTop="276dp"
+        android:alpha="0"
+        android:src="@drawable/enemy1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/fire"
+        android:layout_width="161dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fire" />
+
+    <ImageButton
+        android:id="@+id/down"
+        android:layout_width="108dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="260dp"
+        android:layout_marginTop="204dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/up"
+        android:layout_width="108dp"
+        android:layout_height="147dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="204dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/up" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
