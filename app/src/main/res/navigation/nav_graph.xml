@@ -11,11 +11,18 @@
         android:label="@string/slicer"
         tools:layout="@layout/fragment_slic3">
 
+        <argument
+            android:name="fileUri"
+            app:argType="android.net.Uri" />
     </fragment>
     <fragment
         android:id="@+id/uploadFragment"
         android:name="dev.czlucius.mobislic3.UploadFragment"
         android:label="@string/upload"
-        tools:layout="@layout/fragment_upload" />
+        tools:layout="@layout/fragment_upload" >
+        <action
+            android:id="@+id/passFile"
+            app:destination="@id/slic3rFragment" />
+    </fragment>
 
 </navigation>
